@@ -1,0 +1,91 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-child.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/empty.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/no-ssr.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/store.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/src/renderer.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/config/dev.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/ssr.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/config/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/src/main.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/.postcssrc.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/main.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/config/prod.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/.postcssrc.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/src/router/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/dev-client.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/prod.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/build.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/dev.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/dev-client.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/dev-server.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/router/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/build.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/dev-server.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/vue-loader.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/vue-loader.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/check-versions.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/check-versions.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/webpack.base.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/webpack.base.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/webpack.dev.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/webpack.dev.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/webpack.prod.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/webpack.prod.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/renderer.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/config/dev.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/ssr.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/config/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/src/main.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/.postcssrc.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/main.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/config/prod.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/.postcssrc.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/src/router/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/prod.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/dev-client.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/build.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/dev.env.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/dev-client.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/dev-server.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/router/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/dev-server.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/build.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/vue-loader.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/vue-loader.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/check-versions.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/check-versions.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/webpack.base.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/webpack.base.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/webpack.dev.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/webpack.dev.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/build/webpack.prod.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/build/webpack.prod.conf.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-child.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/empty.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/components/no-ssr.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/store.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
