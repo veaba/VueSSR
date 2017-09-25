@@ -7,3 +7,8 @@ More information about the usage of this directory in the documentation:
 https://nuxtjs.org/guide/routing#middleware
 
 **This directory is not required, you can delete it if you don't want to use it.**
+## 中间件目录
+
+middleware 目录用于存放应用的中间件。
+https://zh.nuxtjs.org/guide/routing#中间件
+demo https://github.com/nuxt/example-auth0

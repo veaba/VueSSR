@@ -6,9 +6,12 @@
         <item url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
         <item url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
         <item url="file://$PROJECT_DIR$/dist/.nuxt/empty.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/router.js" />
         <item url="file://$PROJECT_DIR$/dist/.nuxt/components/no-ssr.js" />
         <item url="file://$PROJECT_DIR$/dist/.nuxt/store.js" />
         <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/utils.js" />
+        <item url="file://$PROJECT_DIR$/dist/.nuxt/index.js" />
         <item url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
       </sourceFilesUrls>
     </properties>
@@ -81,9 +84,12 @@
       <root url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
       <root url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
       <root url="file://$PROJECT_DIR$/dist/.nuxt/empty.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/router.js" />
       <root url="file://$PROJECT_DIR$/dist/.nuxt/components/no-ssr.js" />
       <root url="file://$PROJECT_DIR$/dist/.nuxt/store.js" />
       <root url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/.nuxt/index.js" />
       <root url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
     </CLASSES>
     <SOURCES />
