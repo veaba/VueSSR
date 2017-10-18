@@ -8,3 +8,4 @@ https://nuxtjs.org/guide/routing
 
 ## 解释
 自动将pages目录下的所有*.vue文件生成应用的路由配置
+ 
