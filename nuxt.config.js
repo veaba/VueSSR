@@ -1,5 +1,4 @@
 const bodyParser = require('body-parser')
-const session = require('express-session')
 
 module.exports = {
   /*
@@ -54,15 +53,11 @@ module.exports = {
   serverMiddleware: [
     bodyParser.json(),
     // session middleware
-
-    session({
-      secret: 'super-secret-key',
-      resave: false,
-      saveUninitialzed: false,
-      cookie: {maxAge: 60000}
-    }),
     // api middleware
     // 添加api/login & api/logout routes
     '~/api'
-  ]
+  ],
+  // 全局配置插件
+  plugins: ['~plugins/axios']
+
 }

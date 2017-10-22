@@ -1,5 +1,6 @@
 /**
  *@desc API Router
+ * @desc 该文件的更改需要重启run dev 任务，否则会失败
  * */
 const express = require('express')
 
@@ -17,23 +18,29 @@ router.use((req, res, next) => {
   next()
 })
 
-// Add POST - /api/login
-router.post('/login', (req, res) => {
-  if (req.body.username === 'demo' && req.body.password === 'demo') {
-    req.session.authUser = { username: 'demo' }
-    return res.json({ username: 'demo' })
-  }
-  res.status(401).json({ message: 'Bad credentials' })
-})
+/**
+ * @db design 数据库设计
+ * */
+const db = {
+  // 200 304 401 403 500 501 503 404 http status
+  // 1001 无访问权限
+  // 1002 token 过期
+  // 1003 token 无效
+  code: 1, // 1代表获取正常
+  data: {
 
-// Add POST - /api/logout
-router.post('/logout', (req, res) => {
-  delete req.session.authUser
-  res.json({ ok: true })
-})
+  },
+  msg: 'success' // msg: success  获取成功返回的消息 msg: 由api_msg 规则返回
+
+}
+console.info(db)
 
 router.get('/test', (req, res) => {
   res.json({test: 'test'})
+})
+
+router.post('/post', (req, res) => {
+  res.json({post: 'post'})
 })
 
 // Export the server middleware

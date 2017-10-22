@@ -1,28 +1,19 @@
 <template>
   <div class="container">
 
-    <button @click="test" style="border: 1px solid red">testAPI</button>
+    <button @click="test" style="border: 1px solid red">test API</button>
+    <button @click="post" style="border: 1px solid red">post API</button>
 
     <h1>Please login to see the secret content</h1>
-    <form v-if="!$store.state.authUser" @submit.prevent="login">
-      <p class="error" v-if="formError">{{ formError }}</p>
-      <p><i>To login, use <b>demo</b> as username and <b>demo</b> as password.</i></p>
-      <p>Username: <input type="text" v-model="formUsername" name="username" /></p>
-      <p>Password: <input type="password" v-model="formPassword" name="password" /></p>
-      <button type="submit">Login</button>
-    </form>
-    <div v-else>
-      Hello {{ $store.state.authUser.username }}!
-      <pre>I am the secret content, I am shown only when the use is connected.</pre>
-      <p><i>You can also refresh this page, you'll still be connected!</i></p>
-      <button @click="logout">Logout</button>
-    </div>
-    <p><nuxt-link to="/secret">Super secret page</nuxt-link></p>
+
+
+    <h2>Login</h2>
+
   </div>
 </template>
 
 <script>
-  import axios from 'axios'
+  /* eslint-disable func-call-spacing,no-trailing-spaces,padded-blocks */
   export default {
     data () {
       return {
@@ -31,48 +22,52 @@
         formPassword: ''
       }
     },
+    created () {
+      console.info(22222)
+    },
+    mounted () {
+      this.getList()
+    },
     methods: {
-
+      async getList () {
+        try {
+          await console.info(11)
+        } catch (e) {
+          console.info(e)
+        }
+      },
       test () {
-        axios.get('/api/test', JSON.parse(JSON.stringify({
-          'ttt': 'test'
-        })))
-          .then(res => {
-            console.info(res)
+        this.$ajax.get('/api/test', {
+          test: 'test'
+        })
+          .then (res => {
+            console.info(111)
           })
-          .catch(err => {
+          .catch (err => {
             console.info(err)
           })
       },
-      async login () {
-        try {
-          await this.$store.dispatch('login', {
-            username: this.formUsername,
-            password: this.formPassword
+      post () {
+        this.$ajax.post('/api/post', {
+          test: 'test'
+        })
+          .then (res => {
+            console.info(111)
           })
-          this.formUsername = ''
-          this.formPassword = ''
-          this.formError = null
-        } catch (e) {
-          this.formError = e.message
-        }
-      },
-      async logout () {
-        try {
-          await this.$store.dispatch('logout')
-        } catch (e) {
-          this.formError = e.message
-        }
+          .catch (err => {
+            console.info(err)
+          })
       }
     }
   }
 </script>
 
 <style lang="scss">
-  .container{
+  .container {
     padding: 100px
   }
-  .error{
+
+  .error {
     color: red
   }
 </style>
