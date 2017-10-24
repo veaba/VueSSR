@@ -1,24 +1,27 @@
 /***********************
- *@name JS
- *@author Jo.gel
- *@date 2017/10/5
+ * @name JS
+ * @author Jo.gel
+ * @date 2017/10/5
+ * @desc nux.config.js 配置dev，确定nuxt.js 应用生产模式还是开发模式，然后在package node 此文件
  ***********************/
-const { Nuxt, Builder } = require('nuxt')
-const bodyParser = require('body-parser')
-
+const Nuxt = require('nuxt')
 const app = require('express')()
+const port = process.env.PORT || 3000
 
-// Body parser，用来封装 req.body
-app.use(bodyParser.json())
-
-// 我们用这些选项初始化 Nuxt.js：
-const isProd = process.env.NODE_ENV === 'production'
-const nuxt = new Nuxt({ dev: !isProd })
-// 生产模式不需要 build
-if (!isProd) {
-  const builder = new Builder(nuxt)
-  builder.build()
-}
+// 传入配置初始化 Nuxt.js 实例
+let config = require('./nuxt.config.js')
+const nuxt = new Nuxt(config)
 app.use(nuxt.render)
-app.listen(3000)
-console.log('Server is listening on http://localhost:3000')
+
+// 在开发模式下进行编译
+if (config.dev) {
+  nuxt.build()
+    .catch((error) => {
+      console.error(error)
+      process.exit(1)
+    })
+}
+
+// 监听指定端口
+app.listen(port, '0.0.0.0')
+console.log('服务器运行于 localhost:' + port)

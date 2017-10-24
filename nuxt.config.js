@@ -58,6 +58,12 @@ module.exports = {
     '~/api'
   ],
   // 全局配置插件
-  plugins: ['~plugins/axios']
+  plugins: ['~plugins/axios'],
 
+  // css 配置css 资源
+  css: [
+    {
+      src: '~assets/scss/common.scss', lang: 'scss'// 指定scss 文件而非sass，然而使用scss产生大量的map无效字符，后期还是需要引用scss
+    }
+  ]
 }
